@@ -2,6 +2,8 @@
 layout: post
 title: Connect to remote GIT using SSH from Android Studio (Windows)
 ---
+Android Studio won't let you connect to remote SSH Git repository with user and password, so we need to use asymmetric cryptography.
+
 # Create a pair of RSA keys
 
 The pair of keys can be create anywhere, on any server, on any account. The public key will stay on the GIT server, and the private key on our machine.
