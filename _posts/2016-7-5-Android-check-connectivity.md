@@ -1,6 +1,6 @@
 ---
 layout: post
-title: (Android)Check internet access to before connecting to server
+title: Check internet access to before connecting to server (Android)
 ---
 Every app need to access a server. It's nice to check if we can connect to that server before we actually do it.
 We have two ways to do that.
