@@ -29,8 +29,8 @@ Create a file name config and place it under .ssh directory. Ex. C:\Users\\[your
 Edit the like this:
 
 ```txt
-Host    146.185.146.90
-        HostName        146.185.146.90
+Host    [server url or IP]
+        HostName        [server url or IP]
 	Port            22
 	IdentityFile    C:\Users\[your username]\.ssh\id_rsa
 ```
