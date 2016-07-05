@@ -49,7 +49,7 @@ public static final boolean isInternetOn(Context myContext) {
 	}
 ```
 
-#Another faster way
+# Another faster way
 
 This way you will only find if the port is open on the server, but this may be enough before conection to a server. This also must be inside an AsyncTask.
 
