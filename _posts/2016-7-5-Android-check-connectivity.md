@@ -17,6 +17,7 @@ public static boolean isNetworkConnected(Context context) {
 	}
 ```
 Check if you have this in AndroidManifest.xml
+
 ```xml
 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 ```
@@ -66,4 +67,7 @@ public static Boolean isServerUp(){
 			} catch (Exception e) {
 			}
 	}
+}
 ```
+
+There is no silver bullet. Choose the one that fits your needs.
