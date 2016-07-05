@@ -48,15 +48,17 @@ public static final boolean isInternetOn(Context myContext) {
 		return false;
 	}
 ```
-#Another way
+
+#Another faster way
+
+This way you will only find if the port is open on the server, but this may be enough before conection to a server. This also must be inside an AsyncTask.
 
 ```java
-public static Boolean isServerUp(){
-  String ip = "serverIp"
-  Integer port = "serverPort"
-  Socket s = null;
+static Boolean isServerUp(String serverIpOrHostname, Integer serverPort){
+	Socket s = new Socket();
 	try {
-		s = new Socket(serverIp, serverPort);
+		s.setSoTimeout(2000);
+		s.connect(new InetSocketAddress(serverIpOrHostname,serverPort));
 		return true;
 	} catch (Exception e){
 		return false;
@@ -70,4 +72,4 @@ public static Boolean isServerUp(){
 }
 ```
 
-There is no silver bullet. Choose the one that fits your needs.
+There is no silver bullet. Choose the one that fits your needs. 
