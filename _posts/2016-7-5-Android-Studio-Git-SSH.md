@@ -8,7 +8,7 @@ Android Studio won't let you connect to remote SSH Git repository with user and 
 
 The pair of keys can be create anywhere, on any server, on any account. The public key will stay on the GIT server, and the private key on our machine.
 
-This command generates a set of keys, default names are **id_rsa** for private key and **id_rsa.pub** for public key.
+This command generates a set of keys, default names are **id_rsa** for the private key and **id_rsa.pub** for the public key.
 
 ```sh
 $ ssh-keygen -t rsa
@@ -18,7 +18,7 @@ $ ssh-keygen -t rsa
 
 ## Server
 
-Copy the public key **id_rsa.pub** into authorized_keys in the **.ssh** directory of user home directory:
+Let's assume we'he created the set of keys on the Git server machine. Next copy the public key **id_rsa.pub** into authorized_keys file in the **.ssh** directory of user home directory:
 
 ```sh
 $ cat [path]/id_rsa.pub >> /home/[user]/.ssh/authorized_keys
