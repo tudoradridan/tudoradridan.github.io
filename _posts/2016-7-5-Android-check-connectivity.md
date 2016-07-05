@@ -42,7 +42,7 @@ public static final boolean isInternetOn(Context myContext) {
 			}
 		}
 		catch (Exception e) {
-			e.printStackTrace();
+			Log.i("TAG", e.getLocalizedMessage());
 			return false;
 		}
 		return false;
