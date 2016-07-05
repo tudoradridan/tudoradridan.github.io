@@ -35,3 +35,4 @@ Host    146.185.146.90
 	IdentityFile    C:\Users\[your username]\.ssh\id_rsa
 ```
 
+Now you can commit and push from Android Studio.
