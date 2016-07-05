@@ -27,6 +27,7 @@ Copy the private key **id_rsa** on your windows machine using WinSCP.
 Create a file name config and place it under .ssh directory. Ex. C:\Users\\[your username]\\.ssh\config
 
 Edit the like this:
+
 ```txt
 Host    146.185.146.90
         HostName        146.185.146.90
